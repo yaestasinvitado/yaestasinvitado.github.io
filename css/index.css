@@ -1,0 +1,299 @@
+body {
+    font-family: 'Georama', sans-serif;
+    background-color: #F1F8E9;
+}
+
+.top_1,
+.top_2,
+.top_3 {
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.josefin {
+    font-family: 'Josefin Slab', serif;
+}
+
+.gruppo {
+    font-family: 'Gruppo';
+}
+
+.tai {
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+.teko {
+    font-family: 'Teko', sans-serif;
+}
+
+.dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+.anek {
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.space {
+    font-family: 'Space Mono', monospace;
+}
+
+.titulos {
+    font-size: 14mm;
+}
+
+.icons-header {
+    font-size: 10mm;
+}
+
+.icons-paquetes {
+    font-size: 24mm;
+    color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.cards-header:hover .text-dark {
+    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
+
+.cards-header:hover {
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.subtitulos {
+    font-size: 12mm;
+}
+
+.sub-subtitulos {
+    font-size: 10mm;
+}
+
+.sub-sub-subtitulos {
+    font-size: 7mm;
+}
+
+.background-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)), url(../img/leaf_background_02.jpg);
+}
+
+.textheader {
+    font-size: 6mm;
+}
+
+.textprice {
+    font-size: 10mm;
+}
+
+.text-cards {
+    list-style-type: none;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+.demos {
+    max-width: 170px;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+.zoom {
+    transform: scale(1.08);
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .logo {
+        max-width: 170px;
+    }
+
+    .demos {
+        max-width: 170px;
+    }
+}
+
+.no_color_line {
+    color: #f3f2ed;
+    list-style: none;
+}
+
+/* .animado {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarTop {
+    animation: mostrarTop 1s;
+}
+
+@keyframes mostrarTop {
+    0% {
+        transform: translateY(-60px);
+    }
+
+    else {
+        transform: translateY(0);
+    }
+}
+
+.mostrarLeft {
+    animation: mostrarLeft 1s;
+}
+
+@keyframes mostrarLeft {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    else {
+        transform: translateX(0);
+    }
+}
+
+.mostrarRight {
+    animation: mostrarRight 1s;
+}
+
+@keyframes mostrarRight {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    else {
+        transform: translateX(0);
+    }
+}
+ */
+
+/*STEPPER*/
+
+:root {
+    --prm-color: #4CAF50;
+    --prm-gray: #9CCC65;
+}
+
+
+/* CSS */
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.step-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--prm-gray);
+    transition: .4s;
+}
+
+.step-button[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+    background-color: var(--prm-color);
+    color: #fff;
+}
+
+.done {
+    background-color: var(--prm-color);
+    color: #fff;
+}
+
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+
+#progress {
+    -webkit-appearance: none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
+
+/* to customize progress bar */
+
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color);
+    transition: .5s ease;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
+    
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,14 @@
+$primary: #558B2F;
+$secondary:#33691E;
+$success: #8BC34A;
+$info: #F9FBE7;
+$warning: #9CCC65;
+$danger: #4CAF50;
+$light: #F1F8E9;
+$dark:#1B5E20;
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
