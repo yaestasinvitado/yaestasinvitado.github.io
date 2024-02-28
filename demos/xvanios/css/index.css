@@ -1,0 +1,95 @@
+body{
+	background-color: pink;
+}
+
+.bg-pink{
+	background-color: pink;
+}
+
+.sacramento {
+	font-family: 'Sacramento', cursive;
+}
+
+.josefin {
+	font-family: 'Great Vibes', cursive;
+}
+
+.alice{
+	font-family: 'Alice', serif;
+}
+
+.barlow{
+	font-family: 'Alice', serif;
+}
+
+.rem-0 {
+	font-size: .5rem;
+}
+
+.rem-08 {
+	font-size: .8rem;
+}
+
+.rem-1 {
+	font-size: 1rem;
+}
+
+.rem-2 {
+	font-size: 2rem;
+}
+
+.rem-3 {
+	font-size: 3rem;
+}
+
+.top-1{
+	top: 35px;
+}
+
+.top-2{
+	top: 200px;
+}
+
+.top-3{
+	top: 280px;
+}
+
+.top-4{
+	top: 300px;
+}
+
+.sombras{
+	text-shadow: 1px 1px 2px black;
+}
+
+
+#qrcode {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#qrcode a {
+    font-size: 0.8em;
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+
+}

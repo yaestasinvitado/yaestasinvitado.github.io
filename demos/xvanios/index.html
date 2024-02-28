@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="invitaciones, bodas, virtual, bride, invitation">
+		<meta name="description" content="Si estás leyendo esto, Ya Estás Invitado. Invitaciones virtuales a la medida.">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+		<title>XV Años - Demo</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alice&family=Barlow+Semi+Condensed:wght@100&family=Great+Vibes&family=Sacramento&display=swap"
+			rel="stylesheet">
+	</head>
+
+	<body class="ms-0 me-0">
+		<nav id="sticky" class="navbar navbar-info fixed-top bg-dark">
+			<div class="container-fluid p-2">
+				<a class="navbar-brand ms-1 lato text-light tiempo-detalle" href="https://yaestasinvitado.github.io/">
+					<img src="img/ya_estas_invitado_logo_blanco_icon.png" width="45" height="24" class="d-inline-block align-text-top text-dark img-fluid"> Ya Estás Invitado
+				</a>
+				<div class="container text-center">
+					<span class="navbar-text text-light lato tiempo-detalle">
+					Pregunta por nuestro administrador de invitados, te hará la vida mas fácil.
+				  </span>
+				</div>
+				<div class="container">
+					<button class="btn btn-outline-success cerrar float-end lato tiempo-detalle" onclick="return false;" type="text">Cerrar</button>
+				</div>
+			</div>
+		</nav>
+		<section id="inicio"
+			class="container-fluid position-relative d-flex justify-content-center ps-0 pe-0 hidden">
+			<img src="img/xv_01.jpeg" class="w-100">
+			<div class="row top-1 position-absolute">
+				<div class="col text-center">
+					<span class="josefin text-dark text-white rem-3 sombras">Mis XV</span>
+				</div>
+			</div>
+			<div class="row top-2 position-absolute">
+				<div class="col text-center">
+					<span class="josefin text-dark text-white rem-3 sombras">Kenia
+						Gabrielle</span>
+				</div>
+			</div>
+			<div class="row top-3 position-absolute">
+				<div class="col text-center">
+					<span class="alice text-dark text-white rem-1 sombras">25|dic|2023</span>
+				</div>
+			</div>
+			<div class="row top-4 position-absolute">
+				<div id="clock_01" class="col text-center pt-2">
+
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid pt-1">
+			<div class="row">
+				<div class="col">
+					<img src="img/divider_01.svg" class="w-100">
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid pt-2 hidden">
+			<div class="row">
+				<p class="alice text-center rem-08"> Hay momentos en la vida que son
+					especiales por
+					si solos, pero
+					compartirlos
+					con personas tan especiales como tú, se convierten en momentos
+					imposibles
+					de olvidar.</p>
+				<p class="alice text-center rem-08"> Me hará muy feliz que me acompañes en
+					este día tan especial.</p>
+
+				<span class="alice text-center rem-1">
+					<a id="play-pause">
+						<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+							viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+								d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" /></svg>
+						<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path
+								d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z" /></svg>
+					</a>
+				</span>
+				<p class="alice text-center rem-08">Play|Pause</p>
+			</div>
+		</section>
+		<section class="container-fluid pt-1">
+			<div class="row">
+				<div class="col">
+					<img src="img/divider_02.svg" class="w-100">
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid text-center hidden">
+			<div class="row">
+				<div class="col text-center pt-2">
+					<h1 class="sacramento">25 de Diciembre, 2023</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center pt-2">
+					<h3 class="barlow rem-1">Agustín López Garcia</h3>
+					<h5 class="barlow rem-1">Isabel Mendoza Pacheco</h5>
+					<h5 class="barlow rem-1"><small>(2 Invitados)</small></h5>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="qr-code-generator">
+					<div id="qrcode"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center pt-2">
+					<h4 class="alice rem-1">Oaxaca de Juarez</h4>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid pt-1">
+			<div class="row">
+				<div class="col">
+					<img src="img/divider_03.svg" class="w-100">
+				</div>
+			</div>
+		</section>
+		<section id="evento" class="container-fluid bg-pink">
+			<div class="row d-flex d-flex justify-content-around mx-0 mx-sm-5">
+				<div class="col mx-0 mx-sm-5 d-flex justify-content-end hidden">
+					<div class="card text-center border-0 bg-pink" style="width: 18rem;">
+						<h4 class="card-title josefin rem-2 sombras text-white">Ceremonia
+							Religiosa</h4>
+						<img src="img/iglesia.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title alice">Iglesia de Santo Domingo</h5>
+							<p class="card-text barlow rem-1">C. Macedonio Alcalá s/n, RUTA
+								INDEPENDENCIA, Centro, 68000 Oaxaca de Juárez, Oax.</p>
+							<p class="card-text barlow rem-1">
+								<small>18:00 Hrs.</small>
+							</p>
+							<a href="https://goo.gl/maps/s6oykiqmtbgDuieq7"
+								class="btn btn-outline-primary">Ver
+								Localización</a>
+						</div>
+					</div>
+				</div>
+				<div class="col mx-0 mx-sm-5 d-flex justify-content-start hidden">
+					<div class="card text-center border-0 bg-pink" style="width: 18rem;">
+						<h4 class="card-title josefin rem-2 sombras text-white">Recepción</h4>
+						<img src="img/salon.jpg" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title alice">Club de Leones</h5>
+							<p class="card-text barlow rem-1">C. 7 Lunas 9, 8va Etapa INFONAVIT 1ro
+								de Mayo, Oaxaca de Juárez, Oax.</p>
+							<p class="card-text barlow rem-1">
+								<small>20:00 Hrs.</small>
+							</p>
+							<br>
+							<a href="https://goo.gl/maps/SjqKhffNeYTLrkn29"
+								class="btn btn-outline-primary">Ver
+								Localización</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid pt-1">
+			<div class="row">
+				<div class="col">
+					<img src="img/divider_03.svg" class="w-100">
+				</div>
+			</div>
+		</section>
+		<section id="dresscode" class="container-fluid bg-pink hidden">
+			<div class="container-fluid bg-pink">
+				<div class="row">
+					<div class="col text-center pt-2">
+						<h1 class="josefin rem-2 sombras text-white">Código de Vestimenta</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row d-flex d-flex justify-content-around mx-0 mx-sm-5">
+				<div class="col mx-0 mx-sm-5 d-flex justify-content-end">
+					<div class="card text-center border-0 bg-pink" style="width: 12rem;">
+						<img src="img/dress-man.png" class="card-img-top">
+					</div>
+				</div>
+				<div class="col mx-0 mx-sm-5 d-flex justify-content-start">
+					<div class="card text-center border-0 bg-pink" style="width: 12rem;">
+						<img src="img/dress-woman.png" class="card-img-top">
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col text-center pt-2">
+						<h4 class="josefin rem-2 sombras text-white"><small>Formal</small></h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid pt-1">
+			<div class="row">
+				<div class="col">
+					<img src="img/divider_02.svg" class="w-100">
+				</div>
+			</div>
+		</section>
+		<section id="regalos" class="container-fluid bg-pink hidden">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col text-center pt-2">
+						<h1 class="josefin rem-2 sombras text-white">Mesa de Regalos</h1>
+						<h5 class="alice rem-1"><small>(dar click)</small></h5>
+					</div>
+				</div>
+			</div>
+			<div class="row d-flex d-flex justify-content-around mx-0 mx-sm-5">
+				<div class="col mx-0 mx-sm-5 d-flex justify-content-center">
+					<div class="card text-center border-0 bg-pink" style="width: 12rem;">
+						<a
+							href="https://mesaderegalos.liverpool.com.mx/?gclid=CjwKCAjw-8qVBhANEiwAfjXLrqKUaSxcoNEVvlta_jZGNGZMwEzYqeGBvfZIgp-Epow-vwKD55eVXhoCmiwQAvD_BwE">
+							<img src="img/liverpool.png" class="card-img-top">
+						</a>
+					</div>
+					<div class="card text-center border-0 bg-pink" style="width: 12rem;">
+						<a
+							href="https://www.amazon.com.mx/b?node=19419980011&tag=googhydr0mx-20&hvadid=385747723167&hvpos=&hvexid=&hvnetw=g&hvrand=2296483044296940246&hvpone=&hvptwo=&hvqmt=e&hvdev=c&ref=pd_sl_8wbcgwrcf2_e&hvtargid=kwd-822536122778">
+							<img src="img/amazon.png" class="card-img-top">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid pt-1">
+			<div class="row">
+				<div class="col">
+					<img src="img/divider_02.svg" class="w-100">
+				</div>
+			</div>
+		</section>
+		<section id="hoteles" class="container-fluid bg-pink">
+			<div class="container-fluid bg-pink hidden">
+				<div class="row">
+					<div class="col text-center pt-2">
+						<h1 class="josefin rem-2 sombras text-white">Opciones de Hoteles</h1>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid bg-pink">
+				<div class="row d-flex d-flex justify-content-around mx-0 mx-sm-5">
+					<div class="col mx-0 mx-sm-5 d-flex justify-content-center">
+						<div class="card text-start border-0 bg-pink hidden" style="width: 12rem;">
+							<h5 class="card-title alice text-center">Hotel Oaxaca Mágico</h5>
+							<img src="img/opcion_01.jpg" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text alice">C. de Manuel Sabino Crespo 110, RUTA
+									INDEPENDENCIA, Centro, 68000 Oaxaca de Juárez, Oax.</p>
+								<p class="card-text alice">
+									<small>9515010228</small>
+								</p>
+								<a href="https://www.google.com/travel/hotels/s/BiekL8jqUufQptrS7"
+									class="btn btn-outline-primary">Ver Localización</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mx-0 mx-sm-5 d-flex justify-content-center">
+						<div class="card text-start border-0 bg-pink hidden" style="width: 12rem;">
+							<h5 class="card-title alice text-center">Hotel Fortín Plaza</h5>
+							<img src="img/opcion_02.jpg" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text alice">Venus 118, Estrella, 68040 Oaxaca de Juárez,
+									Oax.</p>
+								<p class="card-text alice">
+									<small>9515157777</small>
+								</p>
+								<br>
+								<a href="https://www.google.com/travel/hotels/s/WswAEp6NdwGjTHhH7"
+									class="btn btn-outline-primary">Ver Localización</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mx-0 mx-sm-5 d-flex justify-content-center bg-pink">
+						<div class="card text-start border-0 bg-pink hidden" style="width: 12rem;">
+							<h5 class="card-title alice text-center">Hotel Oaxaca Inn Centro</h5>
+							<img src="img/opcion_03.jpg" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text alice">Vicente Guerrero 409, Zona Feb 10 2015,
+									Centro, 68000 Oaxaca de Juárez, Oax.</p>
+								<p class="card-text alice">
+									<small>9515143371</small>
+								</p>
+								<br>
+								<a href="https://www.google.com/travel/hotels/s/1uM5huMorNRMe3Zb9"
+									class="btn btn-outline-primary">Ver Localización</a>
+							</div>
+						</div>
+					</div>
+					<div class="col mx-0 mx-sm-5 d-flex justify-content-center">
+						<div class="card text-start border-0 bg-pink hidden" style="width: 12rem;">
+							<h5 class="card-title alice text-center">Hotel Victoria Oaxaca</h5>
+							<img src="img/opcion_04.jpg" class="card-img-top">
+							<div class="card-body">
+								<p class="card-text alice">Carretera internacional Km 545 S/N Col.
+									Figueroa, 68080 Oaxaca de Juárez, Oax.</p>
+								<p class="card-text alice">
+									<small>9515020850</small>
+								</p>
+								<br>
+								<a href="https://www.google.com/travel/hotels/s/kLgB4SfzomCUqrK96"
+									class="btn btn-outline-primary">Ver Localización</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="galeria" class="pb-4">
+			<div class="border rounded-5 border-0 bg-pink">
+				<section class="p-4 text-center w-100">
+					<div class="row">
+						<div class="col-lg-4 col-md-12 mb-1 mb-lg-0">
+							<div class="inner">
+								<img src="img/xv_01.jpeg" class="w-100 shadow-1-strong rounded mb-4 hidden">
+							</div>
+							<div class="inner">
+								<img src="img/xv_02.jpeg" class="w-100 shadow-1-strong rounded mb-4 hidden">
+							</div>
+						</div>
+
+						<div class="col-lg-4 mb-1 mb-lg-0">
+							<div class="inner">
+								<img src="img/xv_03.jpeg" class="w-100 shadow-1-strong rounded mb-4 hidden">
+							</div>
+							<div class="inner">
+								<img src="img/xv_04.jpeg" class="w-100 shadow-1-strong rounded mb-4 hidden">
+							</div>
+						</div>
+
+						<div class="col-lg-4 mb-1 mb-lg-0">
+							<div class="inner">
+								<img src="img/xv_05.jpeg" class="w-100 shadow-1-strong rounded mb-4 hidden">
+							</div>
+							<div class="inner">
+								<img src="img/xv_06.jpeg" class="w-100 shadow-1-strong rounded mb-4 hidden">
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section id="confirmacion" class="container hidden">
+			<blockquote class="blockquote justify-content-center text-center">
+				<h1 class="headers alice">¡Es hora de confirmar!</h1>
+			</blockquote>
+			<form class="row g-3">
+				<div class="col-12 blockquote justify-content-center text-center">
+					<div class="mb-3">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions"
+								id="checkConfirmar" value="option1">
+							<label class="form-check-label alice" for="checkConfirmar">¡Si voy! <i
+									class="fa-solid fa-face-grin-beam"></i></label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions"
+								id="checkDeclinar" value="option2">
+							<label class="form-check-label alice" for="checkDeclinar">No voy <i
+									class="fa-solid fa-face-frown"></i></label>
+						</div>
+					</div>
+					<div class="mb-3">
+						<label for="txtMensaje" class="form-label alice">Mensaje para los novios:</label>
+						<textarea style="resize: none;" class="form-control" id="txtMensaje"
+							rows="3"></textarea>
+					</div>
+				</div>
+				<div class="col-12 blockquote justify-content-center text-center">
+					<button id="enviar" type="submit" class="btn btn-primary alice"
+						data-bs-toggle="modal">
+						Enviar
+					</button>
+				</div>
+			</form>
+		</section>
+		<div class="container-fluid">
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link lato" idPaquete="1" href="#inicio">Volver al Inicio</a>
+				</li>
+			</ul>
+		</div>
+		<audio id="music-button" src="img/cancion.mp3"></audio>
+		<div class="container">
+			<footer class="py-3 my-4">
+				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+					<li class="ms-3"><a class="text-muted" href="#"><i
+								class="fa-brands fa-twitter-square"></i></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><i
+								class="fa-brands fa-instagram-square"></i></a></li>
+					<li class="ms-3"><a class="text-muted" href="#"><i
+								class="fa-brands fa-facebook-square"></i></a></li>
+				</ul>
+				<p class="text-center text-muted">© 2024 Ya Estás Invitado:<a
+						href="https://yaestasinvitado.github.io/" class="text-muted text-decoration-none">
+						https://yaestasinvitado.github.io</a></p>
+				<p class="text-center text-muted">contacto@yaestasinvitado.com</p>
+			</footer>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="js/jquery-plugin-collection.js"></script>
+		<script src='js/qrcode.js'></script>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>
