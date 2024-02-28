@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", event => {
 
 function configuraTempo() {
     if ($("#clock_01").length) {
-        $('#clock_01').countdown('2023/12/25', function (event) {
+        $('#clock_01').countdown('2024/12/25', function (event) {
             var $this = $(this).html(event.strftime('' +
                 '<span class="josefin rem-3 box text-white sombras">%D</span><span class="josefin rem-0 text-white sombras"> Días</span>' +
                 '<span class="josefin rem-3 box text-white sombras">%H</span><span class="josefin rem-0 text-white sombras"> Hrs.</span>' +
