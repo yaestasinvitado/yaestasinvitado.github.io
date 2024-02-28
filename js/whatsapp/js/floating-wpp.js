@@ -1,3 +1,5 @@
+import 'jquery';
+
 (function($) {
     $.fn.floatingWhatsApp = function(options) {
         var settings = $.extend({
