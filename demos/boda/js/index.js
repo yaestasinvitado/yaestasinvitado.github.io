@@ -172,7 +172,7 @@ $(document).on("click", "#enviar", async function(event) {
 
 function configuraTempo() {
     if ($("#clock_01").length) {
-        $('#clock_01').countdown('2023/10/29 18:00', function(event) {
+        $('#clock_01').countdown('2024/10/29 18:00', function(event) {
             var $this = $(this).html(event.strftime('' +
                 '<span class="josefin tiempo box text-danger">%D</span><span class="josefin tiempo-detalle text-danger"> días </span>' +
                 '<span class="josefin tiempo box text-danger">%H</span><span class="josefin tiempo-detalle text-danger"> hrs. </span>' +
