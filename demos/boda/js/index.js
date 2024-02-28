@@ -22,6 +22,7 @@ async function consultaInvitado() {
         try {
             let invitados = [];
             idInvitado = '67P5HJCIf7SvlTfrJYw6';
+            id = '67P5HJCIf7SvlTfrJYw6';
             const docRef = doc(db, "invitados", id);
             const querySnapshot = await getDoc(docRef);
 
