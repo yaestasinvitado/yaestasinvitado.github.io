@@ -16,8 +16,6 @@ Array.from(stepButtons).forEach((button, index) => {
     })
 }); */
 
-import 'jquery';
-
 const stepButtons = document.querySelectorAll('.step-button');
 const progress = document.querySelector('#progress');
 

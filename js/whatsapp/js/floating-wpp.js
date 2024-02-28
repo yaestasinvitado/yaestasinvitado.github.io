@@ -1,4 +1,3 @@
-import 'jquery';
 
 (function($) {
     $.fn.floatingWhatsApp = function(options) {
