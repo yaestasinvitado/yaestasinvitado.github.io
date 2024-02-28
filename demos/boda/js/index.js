@@ -18,14 +18,10 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 async function consultaInvitado() {
-    var query = window.location.search.substring(1);
-    var qs = parse_query_string(query);
-    var id = qs['i'];
 
-    if (id != "") {
         try {
             let invitados = [];
-            idInvitado = id;
+            idInvitado = '67P5HJCIf7SvlTfrJYw6';
             const docRef = doc(db, "invitados", id);
             const querySnapshot = await getDoc(docRef);
 
@@ -49,7 +45,6 @@ async function consultaInvitado() {
                 return false;
             }
         } catch { return false; }
-    } else { return false; }
 }
 
 $(document).ready(async function() {
