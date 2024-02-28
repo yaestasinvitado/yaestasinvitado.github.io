@@ -1,0 +1,286 @@
+.background-parent {
+    width: 100%;
+    height: 600px;
+}
+
+.background-parent-header {
+    width: 100%;
+}
+
+.background-header {
+    width: 100%;
+    height: 1300px;
+}
+
+.background-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)), url(../img/pareja_02.jpg);
+}
+
+.bg-white {
+    background-color: aliceblue;
+}
+
+.header {
+    width: 100%;
+    height: 600px;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .9;
+}
+
+.sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.josefin {
+    font-family: 'Josefin Slab', serif;
+}
+
+.gruppo {
+    font-family: 'Gruppo';
+}
+
+.teko {
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+.teko {
+    font-family: 'Teko', sans-serif;
+}
+
+.dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.updock {
+    font-family: 'Updock', cursive;
+}
+
+.titulos-header {
+    font-size: 27mm;
+}
+
+.titulos {
+    font-size: 14mm;
+}
+
+.subtitulos {
+    font-size: 12mm;
+}
+
+.sub-subtitulos {
+    font-size: 10mm;
+}
+
+.sub-sub-subtitulos {
+    font-size: 6mm;
+}
+
+.tiempo {
+    font-size: 2rem;
+}
+
+.tiempo-detalle {
+    font-size: 1rem;
+}
+
+.recomendaciones {
+    font-size: 2rem;
+}
+
+.and {
+    font-size: 1.5rem;
+}
+
+.novios {
+    font-size: 3rem;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item-fotos {
+    width: 100% !important;
+}
+
+.carousel-item-fotos img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.d-none {
+    display: inline !important;
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+@media (max-width: 900px) {
+    #idNavBar {
+        display: block;
+    }
+    .img-header-save {
+        width: 23rem !important;
+        height: 8rem !important;
+        margin-top: 66% !important;
+    }
+    .background-header {
+        width: 100%;
+        height: 900px;
+    }
+    .titulos-header {
+        font-size: 14mm;
+    }
+}
+
+#qrcode {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#qrcode a {
+    font-size: 0.8em;
+}
+
+.carousel-item-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.carousel-item-top {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.muestra-automatico {
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.img-header-save {
+    width: 63rem;
+    height: 24rem;
+    margin-top: 9%;
+}
+
+.carousel-caption {
+    padding-bottom: 6.25rem;
+}
+
+#pagina {
+    background-image: url(../img/background-paper.jpg);
+}
+
+.background-none {
+    background: none !important;
+}
+
+.swiper-slide {
+    background: none;
+}
+
+.text-gold {
+    color: #285010;
+}
+
+.border-gold {
+    border-color: #285010 !important;
+}
+
+.no-color {
+    color: transparent;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.yourFluidImage {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-wrapper {
+    height: auto !important;
+}
+
+.swiper-slide {
+    height: auto !important;
+    text-align: center;
+    font-size: 14rem;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.hour {
+    font-size: 1rem;
+}
