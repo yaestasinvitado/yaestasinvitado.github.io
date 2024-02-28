@@ -1,6 +1,3 @@
-import 'bootstrap';
-import 'jquery';
-
 $(document).ready(function(e) {
     navbar_height = document.querySelector('.navbar').offsetHeight; //get the offset height
     document.body.style.paddingTop = navbar_height + 'px'; // Add the offset height to the top
